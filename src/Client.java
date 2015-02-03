@@ -2,6 +2,15 @@ import com.datastax.driver.core.Cluster;
 import com.datastax.driver.core.HostDistance;
 import com.datastax.driver.core.PoolingOptions;
 
+/**
+ * 
+ * <p>cassandra连接池配置。<p>
+ * 
+ * 创建日期 2015年2月3日<br>
+ * @author $Author$<br>
+ * @version $Revision$ $Date$
+ * @since 3.0.0
+ */
 public class Client {
     public static void main(String[] args) {
         // 最多允许（32*4*机器个数)个并发请求。如果太多的并发可能会发生获取连接失败。
